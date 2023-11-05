@@ -27,6 +27,10 @@
         list-style:none;
 }
 
+.navContents li a{
+    color: #fff;
+}
+
 .img-fluid{
     /* margin-top: 10px; */
     width: 100%;
@@ -75,7 +79,7 @@
        
         background: #CEAE05;
         border: 2px solid #CEAE05;
-        color: #D9D9D9;
+        color: #fff;;
         border: 2px solid black;
        
     }

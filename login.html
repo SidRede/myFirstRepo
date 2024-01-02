@@ -10,11 +10,11 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-      <img src="./bookBazaarLogo.png" alt="" class="amazon">
+      <img src="./images/bookBazaarLogo.png" alt="bookBazaarLogo" class="amazon">
       </div>
       <div class="contents ">
           <ul class="navContents ">
-               <li><a href="#">Home</a></li>
+               <li><a href="./index.html">Home</a></li>
               <li><a href="#">Books</a></li>
               <li><a href="#">About</a></li>
           </ul>
@@ -43,12 +43,17 @@
                         <h2>Welcome back</h2>
                     </div>
                     <div class="inputDiv">
-                        <input type="text" class="inputField uname" value = "Username">
-                        <input type="text" class="inputField pass" value="Password">
+                        <!-- <input type="text" class="inputField uname" value = "Username">
+                        <input type="text" class="inputField pass" value="Password"> -->
+                        <form action="loginAction.php">
+                          <input type="text" class="inputField uname" value = "Username" name="Username">
+                          <input type="text" class="inputField pass" value="Password" name="Password">
+                          <input type="Submit" class="buy buttonCommon " value="Submit" >
+                        </form>
                     </div>
-                    <div class="loginButton">
-                        <button class="buy buttonCommon signUpButton">Login</button>
-                    </div>
+                    <!-- <div class="loginButton">
+                        <button class="buy buttonCommon signUpButton">Login</button> -->
+                    <!-- </div> -->
               </div>
         </div>
     </div>

@@ -14,7 +14,7 @@ mysqli_select_db( $conn, 'bookbazaar' );
 $uname = $_GET['Username'];
 $password = $_GET['Password'];
 
-$sql = "SELECT * FROM login1 WHERE username = '$uname' AND password = '$password'";
+$sql = "SELECT * FROM signUp WHERE email = '$uname' AND password = '$password'";
     $result = $conn->query($sql);
 
     // Check if a matching record is found

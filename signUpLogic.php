@@ -26,6 +26,8 @@
   if($result -> num_rows > 0)
   {
     $_SESSION['message'] = 'phone no already registered !!';
+    header("Location: signUp.php");
+    exit();
   }
 
   else

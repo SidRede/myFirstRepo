@@ -68,7 +68,7 @@
                         <!-- <input type="text" class="inputField uname" value = "Username">
                         <input type="text" class="inputField pass" value="Password"> -->
                         <form action="loginAction.php">
-                          <input type="text" class="inputField uname" placeholder = "Username" name="Username">
+                          <input type="text" class="inputField uname" placeholder = "Email" name="Username">
                           <input type="text" class="inputField pass" placeholder ="Password" name="Password">
                           <input type="Submit" class="buy buttonCommon " value="Submit" >
                         </form>

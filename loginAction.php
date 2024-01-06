@@ -30,7 +30,7 @@ $sql = "SELECT * FROM signUp WHERE email = '$uname' AND password = '$password'";
          $loggedInUser = $_SESSION['username'];
  
          // Output the value
-         header("Location: index.html");
+         header("Location: index.php");
     }
       
          else {

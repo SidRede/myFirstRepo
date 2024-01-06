@@ -72,6 +72,7 @@
                           <input type="text" class="inputField pass" placeholder ="Password" name="Password">
                           <input type="Submit" class="buy buttonCommon " value="Submit" >
                         </form>
+                        <?php if(isset($_GET['error'])) echo $_GET['error']; ?>
                     </div>
                     <!-- <div class="loginButton">
                         <button class="buy buttonCommon signUpButton">Login</button> -->

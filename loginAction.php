@@ -33,9 +33,12 @@ $sql = "SELECT * FROM signUp WHERE email = '$uname' AND password = '$password'";
          header("Location: index.php");
     }
       
-         else {
-            echo "Invalid username or password.";
-        }
+         else 
+         {
+          $error = " <span class ='red'  style= 'color: red;' >Please enter correct E-mail id and Password</span>";
+          header('location: login.php?error=' . $error);
+         } 
+          
     
     
     ?>

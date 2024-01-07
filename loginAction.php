@@ -11,10 +11,10 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 mysqli_select_db( $conn, 'bookbazaar' );
-$uname = $_GET['Username'];
+$email = $_GET['Username'];
 $password = $_GET['Password'];
 
-$sql = "SELECT * FROM signUp WHERE email = '$uname' AND password = '$password'";
+$sql = "SELECT * FROM signUp WHERE email = '$email' AND password = '$password'";
     $result = $conn->query($sql);
 
     // Check if a matching record is found
@@ -24,11 +24,22 @@ $sql = "SELECT * FROM signUp WHERE email = '$uname' AND password = '$password'";
         // Start or resume the session
         session_start();
          // Store a value in the session
-         $_SESSION['username'] = $uname;
+         $_SESSION['username'] = $email;
+         // Fetch the first row from the result set
+          $row = mysqli_fetch_assoc($result);
+          // Access the value of the user_id attribute
+          $user_id = $row['user_id'];
+
+          $_SESSION['user_id'] = $user_id;
+
+
 
          // Retrieve the value from the session
          $loggedInUser = $_SESSION['username'];
- 
+         
+               // Close the result set
+          mysqli_free_result($result);
+
          // Output the value
          header("Location: index.php");
     }

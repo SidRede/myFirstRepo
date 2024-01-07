@@ -1,3 +1,33 @@
+<?php
+  
+  
+  require 'conn.php';
+  session_start();
+  if (isset($_SESSION['user_id'])) {
+    // Access the 'user_id' key
+    $user_id = $_SESSION['user_id'];
+    // ... rest of your code
+    require 'conn.php';
+    $sql = "select fname from signUp where user_id = '$user_id' ";
+    $result = $conn->query($sql);
+   
+    if($result)
+    {
+      $row = $result->fetch_assoc();
+      $fname = $row['fname'];
+    }
+    else{
+      $fname = "";
+    }
+  }
+  else{
+    $fname = "";
+  }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,6 +103,15 @@
         }
     
     </style>
+
+
+<script>
+  var fname = "<?php echo "Hello $fname !!!"; ?>";
+  console.log(fname);
+  if(fname){
+    alert(fname);
+  }
+</script>
 
 </head>
 

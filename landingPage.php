@@ -106,8 +106,8 @@
                         </div>
 
                         <div class="loginBar">
-                          <form action="#">
-                            <input type="text" class = "emailLogin" placeholder = "enter your email">
+                          <form action="botLoginAction.php" method = "Post" >
+                            <input type="text" class = "emailLogin" name = "email" placeholder = "enter your email">
                             <input type="submit" class = "loginButton" value = "Login">
                           </form>
                         </div>

@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+
   <?php
     // Display PHP messages stored in session
     session_start();
@@ -20,14 +21,34 @@
 
         unset($_SESSION['message']); // Clear the message after displaying
     }
-?>
+    if(isset($_SESSION['email'])){
+      $email = $_SESSION['email'];
+      unset($_SESSION['email']);
+    }
+    else{
+      $email = "";
+    }
+  ?>
+
 <script>
-   var messageFromPHP = <?php echo json_encode($message); ?>;
+   var messageFromPHP = "<?php echo json_encode($message); ?>";
 
    if(messageFromPHP !== null || messageFromPHP !== undefined){
         // Display the message in an alert box
         alert(messageFromPHP);
    }
+
+   var email = "<?php echo json_encode($email);?>";
+
+   if(email !== null || email !== undefined){
+        // Display the message in an alert box
+        alert(email);
+   }
+  //  console.log(email);
+  //  document.getElementByClass("uname").value = email;
+   
+
+
 </script>
 
     <nav class="navbar">
@@ -68,7 +89,7 @@
                         <!-- <input type="text" class="inputField uname" value = "Username">
                         <input type="text" class="inputField pass" value="Password"> -->
                         <form action="loginAction.php">
-                          <input type="text" class="inputField uname" placeholder = "Email" name="Username">
+                          <input type="text" class="inputField uname" placeholder = "Email" name="Username" value = "<?php echo $email ?>"  >
                           <input type="text" class="inputField pass" placeholder ="Password" name="Password">
                           <input type="Submit" class="buy buttonCommon " value="Submit" >
                         </form>

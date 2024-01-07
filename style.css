@@ -145,6 +145,13 @@ line-height: normal;
     justify-content: space-around;
 }
 
+.card{
+    margin: 5px; 
+    display: flex;
+    height: 250px;
+    width: 250px;
+
+}
 
 .card-img-top{
     margin: 5px; 

@@ -19,20 +19,20 @@
  $phone = $_POST['phone'];
  $password = $_POST['pass'];
 
- $sql = "select * from signUp WHERE phone = '$phone' ";
+ $sql = "select * from signUp WHERE email = '$email' ";
 
  $result = $conn->query($sql);
   
   if($result -> num_rows > 0)
   {
-    $_SESSION['message'] = 'phone no already registered !!';
+    $_SESSION['message'] = 'Email already registered !!';
     header("Location: signUp.php");
     exit();
   }
 
   else
   {
-    $sql = "insert into signUp values ('$fname','$lname','$email','$phone','$password')";
+    $sql = "insert into signUp (fname,lname,email,password,phone) values ('$fname','$lname','$email','$password','$phone')";
     $conn->query($sql);
     echo "SignUp successfull !! kindly login again ";
     $_SESSION['message'] = 'SignUp successfull !! kindly login again';

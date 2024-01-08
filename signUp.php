@@ -43,7 +43,7 @@
       </div>
       <div class="contents ">
           <ul class="navContents ">
-               <li><a href="./index.html">Home</a></li>
+               <li><a href="./landingPage.php">Home</a></li>
               <li><a href="#">Books</a></li>
               <li><a href="#">About</a></li>
           </ul>

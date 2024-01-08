@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
@@ -63,8 +66,8 @@
           </ul>
       </div>
       <div class="buttons">
-          <button class="buy buttonCommon">BUY</button>
-          <button class="sell buttonCommon">SELL</button>
+          <button class="buy buttonCommon">Login</button>
+          <button class="sell buttonCommon"><a href="signUp.php">Sign Up</a></button>
       </div>
   </nav>
   </header>
@@ -76,14 +79,14 @@
                 <h1 class="NewHere">New Here ?</h1>
                 <h3 class="signUpText">Sign Up and discover
                     different books</h3>
-                    <div class="buttons">
+                    <div class="buttons" style=" margin-top: 20px;" >
                          <button class="sell buttonCommon signUpButton"><a href="./signUp.php">Sign Up</a></button>
                     </div>
               </div>
 
              <div class="login">
                     <div class="loginText">
-                        <h2>Welcome back</h2>
+                        <h2>Login</h2>
                     </div>
                     <div class="inputDiv">
                         <!-- <input type="text" class="inputField uname" value = "Username">
@@ -91,7 +94,7 @@
                         <form action="loginAction.php">
                           <input type="text" class="inputField uname" placeholder = "Email" name="Username" value = "<?php echo $email ?>"  >
                           <input type="text" class="inputField pass" placeholder ="Password" name="Password">
-                          <input type="Submit" class="buy buttonCommon " value="Submit" >
+                          <input type="Submit" class="buy buttonCommon Submit1 " style="margin-left: 71px; margin-top: 16px;" value="Submit" >
                         </form>
                         <?php if(isset($_GET['error'])) echo $_GET['error']; ?>
                     </div>

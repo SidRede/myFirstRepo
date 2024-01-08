@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 .navbar{
     display: flex;
     /* border: 5px solid black; */
@@ -59,23 +65,27 @@
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     line-height: normal;
+    
 
 }
 
-.buttonCommon:hover{
-    width: 105px;
-    height: 45px ;
-    font-size: 22px;
+/* .buttonCommon a{
+    font-family: inter;
+    font-weight: 500;
+    color: #CEAE05;
+} */
 
+.buttonCommon:hover{
+    font-size: 17px;
 }
 
 .buy{
        
         background: #CEAE05;
         border: 2px solid #CEAE05;
-        color: #D9D9D9;
+        color: #ffffff;
         border: 2px solid black;
        
     }
@@ -99,10 +109,13 @@
 .NewHere{
     margin-top: 150px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: inter;
 }
 
 .signUpText{
+    font-family: inter;
+    margin-top: 16px;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -113,6 +126,10 @@
 
 }
 
+
+form{
+    margin-top: 35px;
+}
 .login{
     border: 1px solid black;
     height: 400px;
@@ -125,9 +142,11 @@
 }
 
 .loginText{
-      margin-top: 70px;
+    margin-top: 70px;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Inter;
 }
 
 .inputDiv{
@@ -155,7 +174,7 @@
     cursor: text;
     /* background-color: field; */
     margin: 0em;
-    padding: 1px 2px;
+    padding: 4px 10px;
     /* border-width: 0px; */
     border: 0.2px;
     border-style: inset;
@@ -175,6 +194,8 @@
     margin-top: 20px;
   
 }
+
+
 
 
 

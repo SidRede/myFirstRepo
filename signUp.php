@@ -152,54 +152,54 @@
 </body>
 
 <script>
-function validateForm(){
-  console.log("Validation function is called");
-  var fname = document.getElementById('fname').value;
-  var lname = document.getElementById('lname').value;
-  var email = document.getElementById('email').value;
-  var phone = document.getElementById('phone').value;
-  var pass = document.getElementById('pass').value;
+      function validateForm(){
+        console.log("Validation function is called");
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var pass = document.getElementById('pass').value;
 
-  if(fname === ''){
-    alert('Please enter first name !');
-    return false;
-   }
-   else{
-    document.getElementById('finalError').innerHTML = '';
-   }
+        if(fname === ''){
+          alert('Please enter first name !');
+          return false;
+        }
+        else{
+          document.getElementById('finalError').innerHTML = '';
+        }
 
-  if(lname === ''){
-    alert('Please enter last name !');
-    return false;
-  }
-  else{
-    document.getElementById('finalError').innerHTML = '';
-   }
+        if(lname === ''){
+          alert('Please enter last name !');
+          return false;
+        }
+        else{
+          document.getElementById('finalError').innerHTML = '';
+        }
 
-   if(email === ''){
-    alert('Please enter email !');
-    return false;
-  }
-  else{
-    document.getElementById('finalError').innerHTML = '';
-   }
+        if(email === ''){
+          alert('Please enter email !');
+          return false;
+        }
+        else{
+          document.getElementById('finalError').innerHTML = '';
+        }
 
-   if(phone === ''){
-     alert('Please enter phone number !');
-    return false;
-  }
-  else{
-    document.getElementById('finalError').innerHTML = '';
-   }
+        if(phone === ''){
+          alert('Please enter phone number !');
+          return false;
+        }
+        else{
+          document.getElementById('finalError').innerHTML = '';
+        }
 
-   if(pass === ''){
-     alert('Please enter password !');
-    return false;
-  }
-   return true;
+        if(pass === ''){
+          alert('Please enter password !');
+          return false;
+        }
+        return true;
 
 
-}
+      }
 </script>
 
 

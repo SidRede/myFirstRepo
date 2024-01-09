@@ -130,7 +130,7 @@
             </ul>
         </div>
         <div class="buttons">
-            <button class="buy buttonCommon"><a href="#">CART</a></button>
+            <button class="buy buttonCommon"><a href="Cart.php">CART</a></button>
             <button class="sell buttonCommon"><a href="logout.php">Logout</a></button>
         </div>
     </nav>

@@ -1,3 +1,10 @@
+<?php
+        // require("common.php");
+        session_start();
+        if (!isset($_SESSION['user_id'])) {
+            header('location: login.php');
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +31,7 @@
                     </ul>
                 </div>
                 <div class="buttons">
-                    <button class="buy buttonCommon"><a href="#">CART</a></button>
+                    <button class="buy buttonCommon"><a href="Cart.php">CART</a></button>
                     <button class="sell buttonCommon"><a href="logout.php">Logout</a></button>
                 </div>
             </nav>    
@@ -44,7 +51,7 @@
                                 <?php
                                  $sum = 0;
                                  $i = 0;
-                                    session_start();
+                                    // session_start();
                                     // $book_id = $_GET['id'];
                                     $user = $_SESSION['user_id'];
 
@@ -75,7 +82,16 @@
                                              echo '</br>'; 
                                              echo '</br>'; 
                                         }
+
+                                        
                                      
+                                    }
+                                    else{
+                                        echo '<div class="row border-top border-bottom">';
+                                        echo ' <div class="row main align-items-center">';
+                                        echo '<p> Cart is Empty </p>';
+                                        echo '</div> </div>';
+                                    
                                     }
 
 
@@ -98,7 +114,7 @@
                                        
                             </div>
 
-                            <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                            <div class="back-to-shop"><a href="index.php">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
                     </div>
 
 
@@ -132,10 +148,7 @@
                                     </tr>
                                 </table>
 
-                                <!-- <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                                    <div class="col">TOTAL PRICE</div>
-                                    <div class="col text-right">&#8377; 2400.00</div>
-                                </div> -->
+                                
                                 <button class="btn">CHECKOUT</button>
 
                         </div>

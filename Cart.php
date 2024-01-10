@@ -39,46 +39,71 @@
                                     <div class="col align-self-center text-right text-muted">3 items</div>
                                 </div>
                             </div>    
-                            <div class="row border-top border-bottom">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="cartImage" src="./images/gaurGopal.jpg"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Energize Your Mind</div>
-                                        <!-- <div class="row">Cotton T-shirt</div> -->
-                                    </div>
-                                    <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                    </div>
-                                    <div class="col">Rs. 180 <span class="close">&#10005;</span></div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="cartImage" src="./images/harryPotter.webp"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Harry Potter Series</div>
-                                        <!-- <div class="row">Cotton T-shirt</div> -->
-                                    </div>
-                                    <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                    </div>
-                                    <div class="col">&#8377; 2000 <span class="close">&#10005;</span></div>
-                                </div>
-                            </div>
+                            <div class="Item-cards">
 
-                            <div class="row border-top border-bottom">
-                                <div class="row main align-items-center">
-                                    <div class="col-2"><img class="cartImage" src="./images/vishwaas.jfif"></div>
-                                    <div class="col">
-                                        <div class="row text-muted">Man Main Hain Vishwaas</div>
-                                        <!-- <div class="row">Cotton T-shirt</div> -->
-                                    </div>
-                                    <div class="col">
-                                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                    </div>
-                                    <div class="col">&#8377; 200 <span class="close">&#10005;</span></div>
-                                </div>
+                                    
+                                        <div class="row border-top border-bottom">
+                                            <div class="row main align-items-center">
+                                                <div class="col-2"><img class="cartImage" src="./images/gaurGopal.jpg"></div>
+                                                <div class="col">
+                                                    <div class="row text-muted ">Energize Your Mind</div>
+                                                    <!-- <div class="row">Cotton T-shirt</div> -->
+                                                </div>
+                                                <div class="col midCol">
+                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                                </div>
+                                                <div class="col  midCol" >Rs. 180 <span class="close">&#10005;</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="row main align-items-center">
+                                                <div class="col-2"><img class="cartImage" src="./images/harryPotter.webp"></div>
+                                                <div class="col">
+                                                    <div class="row text-muted">Harry Potter Series</div>
+                                                    <!-- <div class="row">Cotton T-shirt</div> -->
+                                                </div>
+                                                <div class="col midCol">
+                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                                </div>
+                                                <div class="col midCol">&#8377; 2000 <span class="close">&#10005;</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row border-top border-bottom">
+                                            <div class="row main align-items-center">
+                                                <div class="col-2"><img class="cartImage" src="./images/vishwaas.jfif"></div>
+                                                <div class="col">
+                                                    <div class="row text-muted">Man Main Hain Vishwaas</div>
+                                                </div>
+                                                <div class="col midCol">
+                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                                </div>
+                                                <div class="col midCol">&#8377; 200 <span class="close">&#10005;</span></div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="row border-top border-bottom">
+                                            <div class="row main align-items-center">
+                                                <div class="col-2"><img class="cartImage" src="./images/vishwaas.jfif"></div>
+                                                <div class="col">
+                                                    <div class="row text-muted">Man Main Hain Vishwaas</div>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                                </div>
+                                                <div class="col">&#8377; 200 <span class="close">&#10005;</span></div>
+                                            </div>
+                                        </div>
+
+                                       
                             </div>
 
                             <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
@@ -93,18 +118,35 @@
                             <p>GIVE CODE</p>
                             <input id="code" placeholder="Enter your code">
                         </form>
-                        <div><h3><b>Summary</b></h3></div>
-                        <hr>
-                        <div class="row">
-                            <div class="col" style="padding-left:0;">ITEMS 3</div>
-                            <div class="col text-right">&#8377; 2380.00</div>
-                        </div>
+                       
 
-                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                            <div class="col">TOTAL PRICE</div>
-                            <div class="col text-right">&#8377; 2400.00</div>
+                        <div class="bill-checkout-Button">
+                                <div><h3><b>Summary</b></h3></div>
+                                <table>
+                                    <tr>
+                                        <td>3 ITEMS</td>
+                                        <td>&#8377; 2380.00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>DELIVERY CHARGES</td>
+                                        <td>&#8377; 20.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><hr></td>
+                                    </tr>
+                                        <tr >
+                                        <td>TOTAL PRICE</td>
+                                        <td>&#8377;2400</td>
+                                    </tr>
+                                </table>
+
+                                <!-- <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                                    <div class="col">TOTAL PRICE</div>
+                                    <div class="col text-right">&#8377; 2400.00</div>
+                                </div> -->
+                                <button class="btn">CHECKOUT</button>
+
                         </div>
-                        <button class="btn">CHECKOUT</button>
                     </div>
                 </div>
                 

@@ -36,61 +36,53 @@
                             <div class="title">
                                 <div class="row">
                                     <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                                    <div class="col align-self-center text-right text-muted">3 items</div>
+                                    <!-- <div class="col align-self-center text-right text-muted"> items</div> -->
                                 </div>
                             </div>    
 
                             <div class="Item-cards">
+                                <?php
+                                 $sum = 0;
+                                 $i = 0;
+                                    session_start();
+                                    // $book_id = $_GET['id'];
+                                    $user = $_SESSION['user_id'];
 
-                                    
-                                        <div class="row border-top border-bottom">
-                                            <div class="row main align-items-center">
-                                                <div class="col-2"><img class="cartImage" src="./images/gaurGopal.jpg"></div>
-                                                <div class="col">
-                                                    <div class="row text-muted ">Energize Your Mind</div>
-                                                    <!-- <div class="row">Cotton T-shirt</div> -->
-                                                </div>
-                                                <div class="col midCol">
-                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                                </div>
-                                                <div class="col  midCol" >Rs. 180 <span class="close">&#10005;</span></div>
-                                            </div>
-                                        </div>
+                                    require 'conn.php';
 
-                                        <div class="row">
-                                            <div class="row main align-items-center">
-                                                <div class="col-2"><img class="cartImage" src="./images/harryPotter.webp"></div>
-                                                <div class="col">
-                                                    <div class="row text-muted">Harry Potter Series</div>
-                                                    <!-- <div class="row">Cotton T-shirt</div> -->
-                                                </div>
-                                                <div class="col midCol">
-                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                                </div>
-                                                <div class="col midCol">&#8377; 2000 <span class="close">&#10005;</span></div>
-                                            </div>
-                                        </div>
+                                    $sql = "SELECT book_info.Price AS Price, book_info.Book_name AS bookName, images.data AS image FROM cart JOIN book_info ON cart.Book_id = book_info.Book_id JOIN images ON book_info.Book_id = images.id WHERE user_id = '$user' AND Status = 2; " ;
+                                    $result = $conn->query($sql);
 
-                                        <div class="row border-top border-bottom">
-                                            <div class="row main align-items-center">
-                                                <div class="col-2"><img class="cartImage" src="./images/vishwaas.jfif"></div>
-                                                <div class="col">
-                                                    <div class="row text-muted">Man Main Hain Vishwaas</div>
-                                                </div>
-                                                <div class="col midCol">
-                                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                                                </div>
-                                                <div class="col midCol">&#8377; 200 <span class="close">&#10005;</span></div>
-                                            </div>
-                                        </div>
+                                    if(mysqli_num_rows($result) >=1){
+
+                                        while($row = mysqli_fetch_array($result))
+                                        {
+                                            $sum = $sum + $row['Price'];
+                                            $i = $i + 1;
+
+                                            echo '<div class="row border-top border-bottom">';
+                                            echo ' <div class="row main align-items-center">';
+                                            echo "<div><img src='data:image/jpeg;base64," . base64_encode($row["image"]) . "' alt='Book Image'> </div>";
+                                            echo ' <div class="col">';
+                                            echo '   <div class="row text-muted "> '.$row["bookName"]. ' </div>';
+                                            echo '  </div>';
+                                            echo '<div class="col midCol">';
+                                            echo '<a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>';
+                                            echo '</div>';
+                                            echo '<div class="col  midCol" >&#8377; '.$row['Price'].' <span class="close">&#10005;</span></div>';
+                                            echo '</div>';
+                                            echo ' </div>';
+                                             echo '</br>'; 
+                                             echo '</br>'; 
+                                        }
+                                     
+                                    }
 
 
 
-
-
-
-
-                                        <div class="row border-top border-bottom">
+                                ?>
+                                   
+                                        <!-- <div class="row border-top border-bottom">
                                             <div class="row main align-items-center">
                                                 <div class="col-2"><img class="cartImage" src="./images/vishwaas.jfif"></div>
                                                 <div class="col">
@@ -101,7 +93,7 @@
                                                 </div>
                                                 <div class="col">&#8377; 200 <span class="close">&#10005;</span></div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                        
                             </div>
@@ -114,7 +106,7 @@
                         
                         <form>
                             <p>SHIPPING</p>
-                            <select><option class="text-muted">Standard-Delivery- &#8377; 20.00</option></select>
+                            <select><option class="text-muted">Standard-Delivery- &#8377; 50.00</option></select>
                             <p>GIVE CODE</p>
                             <input id="code" placeholder="Enter your code">
                         </form>
@@ -124,19 +116,19 @@
                                 <div><h3><b>Summary</b></h3></div>
                                 <table>
                                     <tr>
-                                        <td>3 ITEMS</td>
-                                        <td>&#8377; 2380.00 </td>
+                                        <td> <?php echo $i ?> ITEMS</td>
+                                        <td>&#8377; <?php echo $sum; ?> </td>
                                     </tr>
                                     <tr>
                                         <td>DELIVERY CHARGES</td>
-                                        <td>&#8377; 20.00</td>
+                                        <td>&#8377; 50.00</td>
                                     </tr>
                                     <tr>
                                         <td colspan="2"><hr></td>
                                     </tr>
                                         <tr >
                                         <td>TOTAL PRICE</td>
-                                        <td>&#8377;2400</td>
+                                        <td>&#8377;<?php echo $sum + 50; ?> </td>
                                     </tr>
                                 </table>
 

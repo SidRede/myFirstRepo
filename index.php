@@ -189,159 +189,280 @@
             <div class="carousal-container">
               <div class="carousal">
             
-                    <div class="card">
-                        <img src="./images/gaurGopal.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Energize your Mind </h5>
-                              <h6>Rs 180</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
-                      </div>
-                        </div>
-                    </div>
+                      <div class="card">
+                              <img src="./images/gaurGopal.jpg" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Energize your Mind </h5>
+                                    <h6>Rs 180</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(1)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
 
-                    <div class="card">
-                        <img src="./images/harryPotter.webp" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Harry Potter Series </h5>
-                              <h6>Rs 2000</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="./images/twelthFail.webp" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">12th Fail </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
-                      </div>
-                        </div>
-                    </div>
+                      <div class="card">
+                              <img src="./images/twelthFail.webp" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Twelth Fail </h5>
+                                    <h6>Rs 180</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(2)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=2" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
 
-                    <div class="card">
-                        <img src="./images/vishwaas.jfif" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Mn mai hai Vishwaas </h5>
-                              <h6>Rs 180</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="./images/Netaji.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">What Happened To Netaji ? </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
-                      </div>
-                        </div>
-                    </div>
+                      <div class="card">
+                              <img src="./images/harryPotter.webp" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Harry Potter Series </h5>
+                                    <h6>Rs 2000</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(3)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=3" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
 
-                    <div class="card">
-                        <img src="./images/IndianUprising.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">The Great Indian Uprising </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="./images/gitanjaliBook.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Gitanjali </h5>
-                              <h6>Rs 300</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
-                      </div>
-                        </div>
-                    </div>
+                      <div class="card">
+                              <img src="./images/vishwaas.jfif" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Man Mai hai Vishwaas </h5>
+                                    <h6>Rs 200</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(4)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=4" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
 
-                    <div class="card">
-                        <img src="./images/godanBook.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Godaan </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="./images/dopehriBook.jfif" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Dopehari </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
-                      </div>
-                        </div>
-                    </div>
+                      <div class="card">
+                              <img src="./images/dopehriBook.jfif" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Dopehari </h5>
+                                    <h6>Rs 200</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(5)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=5" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
 
-                    <div class="card">
-                        <img src="./images/ravaanBook.jpg" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Ravaan </h5>
-                              <h6>Rs 250</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="./images/loveBook11.jfif" alt="Image 1">
-                        <div class="card-content">
-                          <div class="bookInfo">
-                            <h5 class = "card-title">Love in Ancient India </h5>
-                              <h6>Rs 200</h6>
-                          </div>
-                            
-                            <div class="buttonBuyNow">
-                        <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                      <div class="card">
+                              <img src="./images/godanBook.jpg" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Godaan </h5>
+                                    <h6>Rs 200</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(6)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=6" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
                       </div>
-                        </div>
-                    </div>
+
+                      <div class="card">
+                              <img src="./images/indianNovelBook.png" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">The Great Indian Novel </h5>
+                                    <h6>Rs 250</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(7)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=7" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
+                      </div>
+
+                      <div class="card">
+                              <img src="./images/loveBook2.webp" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Love Story</h5>
+                                    <h6>Rs 200</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(9)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=9" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
+                      </div>
+
+                      <div class="card">
+                              <img src="./images/Netaji.jpg" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">What Happened to Netaji </h5>
+                                    <h6>Rs 300</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(17)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=17" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
+                      </div>
+
+                      <div class="card">
+                              <img src="./images/IndianUprising.jpg" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title"> Indian Uprising </h5>
+                                    <h6>Rs 250</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(9)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=9" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
+                      </div>
+
+                      <div class="card">
+                              <img src="./images/ravaanBook.jpg" alt="Image 1">
+                              <div class="card-content">
+                                <div class="bookInfo">
+                                  <h5 class = "card-title">Ravaan </h5>
+                                    <h6>Rs 400</h6>
+                                </div>
+                                  <!-- <div class="buttonBuyNow">
+                                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                                  </div> -->
+                                  <?php
+                                    if (checkIfAdded(18)) { 
+                                      // echo '<a href="#" class="btn btn-primary" disabled>Added to cart</a>';
+                                      echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
+                                  } else {
+                                      
+                                      echo '<a href="addToCart.php?id=18" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
+                                      
+                                  }
+                                  ?>
+
+                                  
+                              </div>
+                      </div>
             
               </div>
               <div class="prev">&#10094;</div>
@@ -377,7 +498,7 @@
                             echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
                         } else {
                             
-                            echo '<a href="addToCart.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>' ;
+                            echo '<a href="addToCart.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
                             
                         }
                         ?>
@@ -404,7 +525,7 @@
                             echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
                         } else {
                             
-                            echo '<a href="addToCart.php?id=2" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>' ;
+                            echo '<a href="addToCart.php?id=2" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
                             
                         }
                         ?>
@@ -429,7 +550,7 @@
                             echo'<button class = "btn btn-primary" disabled > Added to Cart </button>';
                         } else {
                             
-                            echo '<a href="addToCart.php?id=3" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>' ;
+                            echo '<a href="addToCart.php?id=3" name="add" value="add" class="btn btn-block btn-primary">Buy Now</a>' ;
                             
                         }
                         ?>

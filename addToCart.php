@@ -5,7 +5,7 @@
 
     require 'conn.php';
 
-    $sql = "insert into cart(user_id, book_id, status) values ('$user','$book_id',2);";
+    $sql = "insert into cart(user_id, book_id, status,quantity) values ('$user','$book_id',2,1);";
 
     $conn -> query($sql);
 

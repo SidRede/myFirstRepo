@@ -57,30 +57,34 @@
 
                                     require 'conn.php';
 
-                                    $sql = "SELECT book_info.Price AS Price, book_info.Book_name AS bookName, images.data AS image FROM cart JOIN book_info ON cart.Book_id = book_info.Book_id JOIN images ON book_info.Book_id = images.id WHERE user_id = '$user' AND Status = 2; " ;
+                                    $sql = "SELECT cart.Book_id AS book_id, book_info.Price AS Price, book_info.Book_name AS bookName, images.data AS image, quantity as NoOfItems FROM cart JOIN book_info ON cart.Book_id = book_info.Book_id JOIN images ON book_info.Book_id = images.id WHERE user_id = '$user' AND Status = 2; " ;
                                     $result = $conn->query($sql);
 
-                                    if(mysqli_num_rows($result) >=1){
+                                    if(mysqli_num_rows($result) >= 1){
 
                                         while($row = mysqli_fetch_array($result))
                                         {
-                                            $sum = $sum + $row['Price'];
-                                            $i = $i + 1;
-
-                                            echo '<div class="row border-top border-bottom">';
-                                            echo ' <div class="row main align-items-center">';
-                                            echo "<div><img src='data:image/jpeg;base64," . base64_encode($row["image"]) . "' alt='Book Image'> </div>";
-                                            echo ' <div class="col">';
-                                            echo '   <div class="row text-muted "> '.$row["bookName"]. ' </div>';
-                                            echo '  </div>';
-                                            echo '<div class="col midCol">';
-                                            echo '<a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>';
-                                            echo '</div>';
-                                            echo '<div class="col  midCol" >&#8377; '.$row['Price'].' <span class="close">&#10005;</span></div>';
-                                            echo '</div>';
-                                            echo ' </div>';
-                                             echo '</br>'; 
-                                             echo '</br>'; 
+                                            if($row['NoOfItems'] > 0 )
+                                            {
+                                                $sum = $sum + $row['Price'] * $row['NoOfItems'];
+                                                $i = $i + $row['NoOfItems'];
+    
+                                                echo '<div class="row border-top border-bottom">';
+                                                echo ' <div class="row main align-items-center">';
+                                                echo "<div><img src='data:image/jpeg;base64," . base64_encode($row["image"]) . "' alt='Book Image'> </div>";
+                                                echo ' <div class="col">';
+                                                echo '<div class="row text-muted "> '.$row["bookName"]. ' </div>';
+                                                echo '</div>';
+                                                echo '<div class="col midCol">';
+                                                echo '<a href="Dec-Items.php?id='.$row['book_id'].'">-</a><a href="#" class="border">'.$row['NoOfItems'].'</a><a href="Inc-Item.php?id='.$row['book_id'].'">+</a>';
+                                                echo '</div>';
+                                                echo '<div class="col  midCol" >&#8377; '.$row['Price'].' <span class="close"> <a href="remove-item.php?id='.$row['book_id'].'" >&#10005; </a> </span></div>';
+                                                echo '</div>';
+                                                echo ' </div>';
+                                                 echo '</br>'; 
+                                                 echo '</br>'; 
+                                            }
+                                            
                                         }
 
                                         

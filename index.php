@@ -60,7 +60,7 @@
         }
 
         .card {
-          height: 52vh;
+          height: 59vh;
             overflow:hidden;
             flex: 0 0 auto;
             width: 300px; /* Set your desired width */
@@ -109,9 +109,15 @@
 <script>
   var fname = "<?php echo "Hello $fname !!!"; ?>";
   console.log(fname);
-  if(fname){
+  var Alert = <?php echo $_SESSION['alert'];?>;
+  console.log(Alert);
+  if(Alert){
+    if(fname){
     alert(fname);
   }
+  <?php $_SESSION['alert'] = 0; ?>
+  }
+ 
 </script>
 
 </head>

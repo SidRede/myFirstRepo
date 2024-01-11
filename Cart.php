@@ -25,7 +25,7 @@
                 </div>
                 <div class="contents ">
                     <ul class="navContents "> 
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Books</a></li>
                         <li><a href="#">About</a></li>
                     </ul>

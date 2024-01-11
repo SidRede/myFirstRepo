@@ -32,6 +32,7 @@ $sql = "SELECT * FROM signUp WHERE email = '$email' AND password = '$password'";
 
           $_SESSION['user_id'] = $user_id;
 
+          $_SESSION['alert'] = 1 ;
 
 
          // Retrieve the value from the session

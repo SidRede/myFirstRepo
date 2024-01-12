@@ -660,64 +660,7 @@
     </section>
 
     <script>
-          const carousal = document.querySelector('.carousal');
-          const cards = document.querySelectorAll('.card');
-          const cardWidth = cards[0].offsetWidth;
-          const cardsInView = 6;
-          let currentIndex = 0;
-
-          // Clone cards for seamless wrapping
-          for (let i = 0; i < cardsInView; i++) {
-            const clone = cards[i].cloneNode(true);
-            carousal.appendChild(clone);
-          }
-
-          function updateCarousal() {
-            const newTransformValue = -currentIndex * cardWidth + 'px';
-            carousal.style.transition = 'transform 0.5s ease-in-out';
-            carousal.style.transform = 'translateX(' + newTransformValue + ')';
-          }
-
-          function nextSlide() {
-            currentIndex++;
-            updateCarousal();
-            if (currentIndex === cards.length - cardsInView + 1) {
-              setTimeout(() => {
-                currentIndex = 0;
-                carousal.style.transition = 'none';
-                updateCarousal();
-              }, 500);
-            }
-          }
-
-          function prevSlide() {
-            currentIndex--;
-            updateCarousal();
-            if (currentIndex < 0) {
-              setTimeout(() => {
-                currentIndex = cards.length - cardsInView;
-                carousal.style.transition = 'none';
-                updateCarousal();
-              }, 500);
-            }
-          }
-
-          const nextBtn = document.querySelector('.next');
-          const prevBtn = document.querySelector('.prev');
-
-          nextBtn.addEventListener('click', nextSlide);
-          prevBtn.addEventListener('click', prevSlide);
-
-          // Set up automatic sliding every 3 seconds (adjust as needed)
-          setInterval(nextSlide, 3000);
-    </script>
-
-
-
-
-
-<script>
-  const carousel = document.querySelector('.carousel');
+  const carousal = document.querySelector('.carousal');
   const cards = document.querySelectorAll('.card');
   const cardWidth = cards[0].offsetWidth;
   const cardsInView = 6;
@@ -726,35 +669,47 @@
   // Clone cards for seamless wrapping
   for (let i = 0; i < cardsInView; i++) {
     const clone = cards[i].cloneNode(true);
-    carousel.appendChild(clone);
+    carousal.appendChild(clone);
   }
 
-  function updateCarousel() {
+  function updateCarousal() {
     const newTransformValue = -currentIndex * cardWidth + 'px';
-    carousel.style.transition = 'transform 0.5s ease-in-out';
-    carousel.style.transform = 'translateX(' + newTransformValue + ')';
+    carousal.style.transition = 'transform 0.5s ease-in-out';
+    carousal.style.transform = 'translateX(' + newTransformValue + ')';
   }
 
   function nextSlide() {
     currentIndex++;
-    updateCarousel();
+    updateCarousal();
     if (currentIndex === cards.length - cardsInView + 1) {
       setTimeout(() => {
         currentIndex = 0;
-        carousel.style.transition = 'none';
-        updateCarousel();
+        carousal.style.transition = 'none';
+        updateCarousal();
       }, 500);
     }
   }
 
   function prevSlide() {
     currentIndex--;
-    updateCarousel();
+    updateCarousal();
     if (currentIndex < 0) {
       setTimeout(() => {
         currentIndex = cards.length - cardsInView;
-        carousel.style.transition = 'none';
-        updateCarousel();
+        carousal.style.transition = 'none';
+        updateCarousal();
+      }, 500);
+    }
+  }
+
+  function prevSlide() {
+    currentIndex--;
+    updateCarousal();
+    if (currentIndex < 0) {
+      setTimeout(() => {
+        currentIndex = cards.length - cardsInView;
+        carousal.style.transition = 'none';
+        updateCarousal();
       }, 500);
     }
   }
@@ -768,6 +723,20 @@
   // Set up automatic sliding every 3 seconds (adjust as needed)
   setInterval(prevSlide, 3000);
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <footer class="footer">

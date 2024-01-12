@@ -2,6 +2,7 @@
 
 function CheckIfAdded($bookId)
 {
+    // session_start();
     $user_id = $_SESSION['user_id'];
 
     require 'conn.php';

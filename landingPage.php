@@ -142,7 +142,7 @@
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
-                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                    <a href="./login.php" class="btn btn-primary"><center> Buy Now  </center></a>
                   </div>
 
                   
@@ -158,7 +158,7 @@
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
-                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                    <a href="./login.php" class="btn btn-primary"><center> Buy Now  </center></a>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
-                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                    <a href="./login.php" class="btn btn-primary"><center> Buy Now  </center></a>
                   </div>
                 </div>
               </div>
@@ -186,7 +186,7 @@
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
-                    <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
+                    <a href="./login.php" class="btn btn-primary"><center> Buy Now  </center></a>
                   </div>
                 </div>
               </div>

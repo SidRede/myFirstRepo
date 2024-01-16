@@ -659,7 +659,7 @@
 
     </section>
 
-    <script>
+    /*<script>
           const carousal = document.querySelector('.carousal');
           const cards = document.querySelectorAll('.card');
           const cardWidth = cards[0].offsetWidth;
@@ -710,7 +710,7 @@
 
           // Set up automatic sliding every 3 seconds (adjust as needed)
           setInterval(nextSlide, 3000);
-    </script>
+    </script> */
 
 
 

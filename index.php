@@ -194,7 +194,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Energize your Mind </h5>
-                                    <h6>Rs 180</h6>
+                                    <h6> &#8377; 180</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -219,7 +219,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Twelth Fail </h5>
-                                    <h6>Rs 180</h6>
+                                    <h6> &#8377; 180</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -244,7 +244,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Harry Potter Series </h5>
-                                    <h6>Rs 2000</h6>
+                                    <h6> &#8377; 2000</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -269,7 +269,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Man Mai hai Vishwaas </h5>
-                                    <h6>Rs 200</h6>
+                                    <h6> &#8377; 200</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -294,7 +294,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Dopehari </h5>
-                                    <h6>Rs 200</h6>
+                                    <h6> &#8377; 200</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -319,7 +319,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Godaan </h5>
-                                    <h6>Rs 200</h6>
+                                    <h6> &#8377; 200</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -344,7 +344,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">The Great Indian Novel </h5>
-                                    <h6>Rs 250</h6>
+                                    <h6> &#8377; 250</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -369,7 +369,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Love Story</h5>
-                                    <h6>Rs 200</h6>
+                                    <h6> &#8377; 200</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -394,7 +394,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">What Happened to Netaji </h5>
-                                    <h6>Rs 300</h6>
+                                    <h6> &#8377; 300</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -419,7 +419,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title"> Indian Uprising </h5>
-                                    <h6>Rs 250</h6>
+                                    <h6> &#8377; 250</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -444,7 +444,7 @@
                               <div class="card-content">
                                 <div class="bookInfo">
                                   <h5 class = "card-title">Ravaan </h5>
-                                    <h6>Rs 400</h6>
+                                    <h6> &#8377; 400</h6>
                                 </div>
                                   <!-- <div class="buttonBuyNow">
                                     <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -487,7 +487,7 @@
                     <div class="card-content">
                       <div class="bookInfo">
                         <h5 class = "card-title">Energize your Mind </h5>
-                          <h6>Rs 180</h6>
+                          <h6> &#8377; 180</h6>
                       </div>
                         <!-- <div class="buttonBuyNow">
                           <a href="#" class="btn btn-primary"><center> Buy Now  </center></a>
@@ -512,7 +512,7 @@
                 <div class="card-body">
                   <div class="bookInfo">
                     <h5 class="card-title">12th Fail</h5>
-                    <h6>Rs 180</h6>
+                    <h6> &#8377; 180</h6>
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <!-- <div class="buttonBuyNow">
@@ -537,7 +537,7 @@
                   <div class="card-body">
                       <div class="bookInfo">
                         <h5 class="card-title">Harry Potter</h5>
-                        <h6>Rs 500</h2>
+                        <h6> &#8377; 500</h2>
                       </div>
                         <!-- <p class="card-text"></p> -->
                       <!-- <div class="buttonBuyNow">
@@ -564,7 +564,7 @@
                 <div class="card-body">
                   <div class="bookInfo">
                     <h5 class="card-title">Mn mai hai Vishwaas</h5>
-                    <h6>Rs 200</h2>
+                    <h6> &#8377; 200</h2>
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <!-- <div class="buttonBuyNow">
@@ -602,7 +602,7 @@
                   <div class="card-body">
                       <div class="bookInfo">
                         <h5 class="card-title">Harry Potter</h5>
-                        <h6>Rs 500</h2>
+                        <h6> &#8377; 500</h2>
                       </div>
                         <!-- <p class="card-text"></p> -->
                       <div class="buttonBuyNow">
@@ -616,7 +616,7 @@
                 <div class="card-body">
                   <div class="bookInfo">
                     <h5 class="card-title">12th Fail</h5>
-                    <h6>Rs 180</h2>
+                    <h6> &#8377; 180</h2>
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
@@ -630,7 +630,7 @@
                 <div class="card-body">
                   <div class="bookInfo">
                     <h5 class="card-title">Energize Your Mind</h5>
-                    <h6>Rs 250</h2>
+                    <h6> &#8377; 250</h2>
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">
@@ -644,7 +644,7 @@
                 <div class="card-body">
                   <div class="bookInfo">
                     <h5 class="card-title">Mn mai hai Vishwaas</h5>
-                    <h6>Rs 200</h2>
+                    <h6> &#8377; 200</h2>
                   </div>
                   <!-- <p class="card-text"></p> -->
                   <div class="buttonBuyNow">

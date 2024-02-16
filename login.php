@@ -92,7 +92,7 @@
                         <!-- <input type="text" class="inputField uname" value = "Username">
                         <input type="text" class="inputField pass" value="Password"> -->
                         <form action="loginAction.php">
-                          <input type="text" class="inputField uname" placeholder = "Email" name="Username" value = "<?php echo $email ?>"  >
+                          <input type="text" class="inputField uname" placeholder = "Email" name="Username"  >
                           <input type="text" class="inputField pass" placeholder ="Password" name="Password">
                           <input type="Submit" class="buy buttonCommon Submit1 " style="margin-left: 71px; margin-top: 16px;" value="Submit" >
                         </form>
@@ -139,7 +139,7 @@
         </div>
   
   
-      </footer>
+    </footer>
 
 
 </body>

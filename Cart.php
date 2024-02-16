@@ -124,11 +124,11 @@
 
                     <div class="col-md-4 summary">
                         
-                        <form>
+                        <form >
                             <p>SHIPPING</p>
                             <select><option class="text-muted">Standard-Delivery- &#8377; 50.00</option></select>
                             <p>GIVE CODE</p>
-                            <input id="code" placeholder="Enter your code">
+                            <input id="code" placeholder="Enter your code" >
                         </form>
                        
 

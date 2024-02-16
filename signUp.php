@@ -32,6 +32,9 @@
    if(messageFromPHP !== null || messageFromPHP !== undefined){
         // Display the message in an alert box
         alert(messageFromPHP);
+
+
+    
    }
 
 
@@ -74,12 +77,13 @@
 
           </div>
           <div class="innerBox">
-           <div class="headline">
-            <h2> <center> Create Account</center></h2>
-           </div>
+           
            
             <div class="form1">
                 <form action="signUpLogic.php" method="post" onsubmit= "return validateForm()">
+                  <div class="headline">
+                    <h2> <center> Create Account</center></h2>
+                  </div>
                   <div class="Name">
                     <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="given-name">
                     <span id="fnameError" class="error"></span>
